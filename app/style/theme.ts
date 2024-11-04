@@ -25,16 +25,11 @@ export const customTheme = createTheme({
       color: 'white',
     },
     Header: {
-      rightContainerStyle: {
-        justifyContent: 'center',
-      },
-      containerStyle: {
-        flexDirection: 'row',
-        alignContent: 'center',
-        alignItems: 'center',
-        alignSelf: 'center',
-        justifyContent: 'center',
-      },
+      rightContainerStyle: customStyle.rightHeaderContainer,
+      containerStyle: customStyle.headerContainer,
+    },
+    Card: {
+      containerStyle: customStyle.cardDefault,
     },
   },
 });
