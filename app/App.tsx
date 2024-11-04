@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
-import {useColorScheme, TouchableOpacity, ScrollView, View} from 'react-native';
-import {Header, Icon, SearchBar} from '@rneui/themed';
+import {useColorScheme, ScrollView} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {ThemeProvider} from '@rneui/themed';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
@@ -9,6 +8,7 @@ import {Provider} from 'react-redux';
 import {store} from './redux/store';
 import AppHeader from './components/AppHeader';
 import SplashScreen from 'react-native-splash-screen';
+import CategoriesList from './components/CategoriesList';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -29,7 +29,7 @@ const App = () => {
           <ScrollView
             contentInsetAdjustmentBehavior="automatic"
             style={backgroundStyle}>
-            <View></View>
+            <CategoriesList />
           </ScrollView>
         </SafeAreaProvider>
       </ThemeProvider>

@@ -5,6 +5,12 @@ export interface IAPIResponse {
   limit: number;
 }
 
+export interface IProductCategory {
+  slug: string;
+  name: string;
+  url: string;
+}
+
 export interface IProduct {
   id: number;
   title: string;
