@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, useColorScheme, TouchableOpacity, ScrollView} from 'react-native';
+import {useColorScheme, TouchableOpacity, ScrollView, View} from 'react-native';
 import {Header, Icon, SearchBar} from '@rneui/themed';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {ThemeProvider} from '@rneui/themed';
@@ -27,9 +27,9 @@ const App = () => {
           }
           rightComponent={
             <TouchableOpacity
-            //  onPress={shopCartNavigate}
+            //  onPress={shopBagNavigate}
             >
-              <Icon name="shopping-cart" />
+              <Icon name="shopping-bag" />
             </TouchableOpacity>
           }
         />
