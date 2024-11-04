@@ -8,16 +8,16 @@ export const customTheme = createTheme({
       default: lightColors.platform.android,
       ios: lightColors.platform.ios,
     }),
-    primary: '#26404F',
-    background: '#F3AE48',
+    primary: customStyle.brandPalettePrimary.color,
+    background: customStyle.brandPaletteSecondary.color,
   },
   darkColors: {
     ...Platform.select({
       default: darkColors.platform.android,
       ios: darkColors.platform.ios,
     }),
-    primary: '#26404F',
-    background: '#F3AE48',
+    primary: customStyle.brandPalettePrimary.color,
+    background: customStyle.brandPaletteSecondary.color,
   },
   components: {
     Icon: {

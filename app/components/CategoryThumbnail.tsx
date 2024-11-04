@@ -1,28 +1,37 @@
-import {Image} from '@rneui/themed';
+import {Icon} from '@rneui/themed';
 import React from 'react';
+import {View} from 'react-native';
+import {customStyle} from '../style/style';
 
 export interface CategoryThumbnailProps {
-  uri: string;
+  name: string;
 }
 
 const CategoryThumbnail = (props: CategoryThumbnailProps) => {
-  const {uri} = props;
+  const {name} = props;
   return (
-    <Image
+    <View
       style={{
         height: 100,
         width: 100,
         overflow: 'hidden',
         borderRadius: 100 / 2,
-      }}
-      containerStyle={{
-        alignSelf: 'center',
-      }}
-      resizeMode="contain"
-      source={{
-        uri,
-      }}
-    />
+        backgroundColor: customStyle.brandPalettePrimary.color,
+      }}>
+      <Icon
+        type="material-community"
+        name={name}
+        iconStyle={{
+          fontSize: 64,
+          color: customStyle.brandPaletteSecondary.color,
+        }}
+        containerStyle={{
+          height: '100%',
+          alignSelf: 'center',
+          justifyContent: 'center',
+        }}
+      />
+    </View>
   );
 };
 

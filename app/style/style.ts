@@ -20,4 +20,10 @@ export const customStyle = StyleSheet.create({
   rightHeaderContainer: {
     justifyContent: 'center',
   },
+  brandPalettePrimary: {
+    color: '#26404F',
+  },
+  brandPaletteSecondary: {
+    color: '#F3AE48',
+  },
 });
